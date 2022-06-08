@@ -5,8 +5,7 @@
 using namespace std;
 struct emp
 {
-	string name,id,address;
-	double contact,salary;
+	string name,id,address,contact,salary;
 	
 };
 emp e[1000];
@@ -60,10 +59,13 @@ void show()
 	{
 		cout<<"\n\n\t\tYour record is empty "<<endl;
 	}
+	system("pause");
+	system("cls");
 
 }
 void search()
 {
+	system("cls");
 	if(total!=0)
 	{
 		string id;
@@ -91,9 +93,12 @@ void search()
 	{
 		cout<<"\n\n\t\tYour record is empty "<<endl;
 	}
+	system("pause");
+	system("cls");
 }
 void update()
 {
+	system("cls");
 	if(total!=0)
 	{
 		string id;
@@ -115,9 +120,6 @@ void update()
 				cout<<"Employee name : ";
 				cin>>e[i].name;
 				//getline(cin,e[i].name);
-		
-				cout<<"Enter id: ";
-				cin>>e[i].id;
 		
 				cout<<"Enter address: ";
 				cin>>e[i].address;
@@ -141,10 +143,13 @@ void update()
 	{
 		cout<<"\n\n\t\tYour record is empty "<<endl;
 	}
+	system("pause");
+	system("cls");
 	
 }
 void del()
 {
+	system("cls");
 	if(total!=0)
 	{
 		char user;
@@ -190,10 +195,13 @@ void del()
 	{
 		cout<<"\n\n\t\tYour record is empty "<<endl;
 	}
+	system("pause");
+	system("cls");
 }
 
 int main()
 {
+	system("cls");
 	cout<<"\n\n\t\t EMPLYOEE MANAGEMENT SYSTEM "<<endl;
 	cout<<"\t <<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>"<<endl;
 	cout<<"\n\n\t\t ***SIGN UP*** "<<endl;
@@ -217,7 +225,7 @@ int main()
 	start :
 	system("CLS");	
 	cout<<"\n\n\t\t EMPLYOEE MANAGEMENT SYSTEM "<<endl;
-	cout<<"\n\n\t\t Login "<<endl;
+	cout<<"\n\n\t\t Sign-in "<<endl;
 	string username1,password1;
 	cout<<"\n\n\t\t Enter Your Username: ";
 	cin>>username1;
@@ -264,7 +272,10 @@ int main()
 				case '6':
 					goto start;
 					break;
-					
+
+				case '7':
+					exit(0);
+					break;	
 				default:
 					cout<<"\a INVALID INPUT ..."<<endl;
 					break;
